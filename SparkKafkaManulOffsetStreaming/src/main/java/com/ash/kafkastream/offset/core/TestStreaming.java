@@ -74,7 +74,7 @@ public class TestStreaming {
 				// StreamingContext has been loaded
 				// from the new checkpoint
 				logger.info("Creating new context");
-
+				//spark conf
 				SparkConf sparkConf = new SparkConf().setAppName(appName).setMaster("local[2]");
 				// .set("spark.driver.allowMultipleContexts", "true");
 				// ;
