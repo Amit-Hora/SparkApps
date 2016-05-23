@@ -44,6 +44,7 @@ public class TestStreaming {
 					+ args.length);
 			System.exit(1);
 		}
+		System.out.println();
 		final String kafkaTopicArray[] = args[0].split(",");
 		final String appName = args[2];
 		final Set<String> kafkaTopicSet = new HashSet<String>(Arrays.asList(kafkaTopicArray));
