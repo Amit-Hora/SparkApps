@@ -10,5 +10,6 @@ public class SpringBootSecurityMsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootSecurityMsApplication.class, args);
+		System.out.println("Testing the first spring boot");
 	}
 }
