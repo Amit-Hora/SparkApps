@@ -7,6 +7,7 @@ import javax.persistence.Table;
 //@Table(name = "users")
 public class UserBean {
 
+	private String testName;
 	private String userName;
 	private String password;
 	public String getUserName() {
