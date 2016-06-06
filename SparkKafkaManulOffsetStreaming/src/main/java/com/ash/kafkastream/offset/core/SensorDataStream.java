@@ -13,6 +13,7 @@ import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.sql.Row;
+import org.apache.spark.streaming.Duration;
 import org.apache.spark.streaming.Durations;
 import org.apache.spark.streaming.api.java.JavaPairDStream;
 import org.apache.spark.streaming.api.java.JavaReceiverInputDStream;
@@ -147,7 +148,7 @@ public class SensorDataStream {
 				
 			}
 		});
-//		updatedStream.checkpoint(new Duration(20000));
+		updatedStream.checkpoint(new Duration(20000));
 		avgStream.print();
 		
 	/**

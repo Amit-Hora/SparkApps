@@ -1,4 +1,4 @@
-package com.ash.kafkastream.offset.core;
+/*package com.ash.kafkastream.offset.core;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -29,12 +29,12 @@ import kafka.serializer.StringDecoder;
 import scala.Tuple2;
 
 public class TestStreaming {
-	/**
+	*//**
 	 * Pass Kafka Topic name ,IP address as command line argument args[1] =kafka
 	 * topic // comma seperated args[2] =kafka broker'
 	 * 
 	 * @param args
-	 */
+	 *//*
 	final static Logger logger = LoggerFactory.getLogger(TestStreaming.class);
 
 	public static void main(String[] args) {
@@ -59,9 +59,9 @@ public class TestStreaming {
 		// Function to create JavaStreamingContext without any output operations
 		// (used to detect the new context)
 		Function0<JavaStreamingContext> createContextFunc = new Function0<JavaStreamingContext>() {
-			/**
+			*//**
 			 * Default Serialization ID
-			 */
+			 *//*
 			private static final long serialVersionUID = 1L;
 
 			public JavaStreamingContext call() {
@@ -119,7 +119,7 @@ public class TestStreaming {
 					 
 
 					 
-					 /*						 directKafkaStream.map(new Function<Tuple2<String,String>, String>() {
+					 						 directKafkaStream.map(new Function<Tuple2<String,String>, String>() {
 
 						@Override
 						public String call(Tuple2<String, String> arg0) throws Exception {
@@ -143,7 +143,7 @@ public class TestStreaming {
 							
 						}
 						
-					});*/
+					});
 					 
 					 directKafkaStream.print();
 					 
@@ -158,13 +158,14 @@ public class TestStreaming {
 			}
 		};
 
-		/**
+		*//**
 		 * Create a new context or gets from the checkpoint directory and awaits
 		 * termination
-		 */
+		 *//*
 		JavaStreamingContext ssc = JavaStreamingContext.getOrCreate(checkpointDirectory, createContextFunc);
 		ssc.start();
 		ssc.awaitTermination();
 	}
 
 }
+*/

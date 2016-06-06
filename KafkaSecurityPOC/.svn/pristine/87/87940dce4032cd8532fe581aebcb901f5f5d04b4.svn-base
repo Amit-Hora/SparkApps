@@ -1,0 +1,10 @@
+KafkaClient {
+   com.sun.security.auth.module.Krb5LoginModule required
+   doNotPrompt=true
+   useTicketCache=true
+   principal="kafka/d-9539.kpit.com@EXAMPLE.COM"
+   useKeyTab=true
+   serviceName="kafka"
+   keyTab="/data/security/keytabs/kafka.service.keytab"
+   client=true;
+};
